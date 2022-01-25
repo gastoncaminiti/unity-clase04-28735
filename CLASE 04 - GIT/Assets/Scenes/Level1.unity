@@ -395,6 +395,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1902965987
 --- !u!1 &1619030671
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,6 +404,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+  - component: {fileID: 1902965991}
+  - component: {fileID: 1902965990}
+  - component: {fileID: 1902965989}
+  - component: {fileID: 1902965988}
+  m_Layer: 0
+  m_Name: Player
   - component: {fileID: 1619030675}
   - component: {fileID: 1619030674}
   - component: {fileID: 1619030673}
@@ -414,17 +421,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &1902965988
+BoxCollider:
 --- !u!135 &1619030672
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902965987}
   m_GameObject: {fileID: 1619030671}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1902965989
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1619030673
@@ -433,6 +446,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902965987}
   m_GameObject: {fileID: 1619030671}
   m_Enabled: 1
   m_CastShadows: 1
@@ -446,6 +460,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 2100000, guid: 3be5e82a05b0209428674b44dcaa9ba1, type: 2}
   - {fileID: 2100000, guid: 062abe59a62c1fc40aa3c8e7b5e76534, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -468,12 +483,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1902965990
 --- !u!33 &1619030674
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902965987}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1902965991
   m_GameObject: {fileID: 1619030671}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1619030675
@@ -482,6 +501,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902965987}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.02, z: 0}
   m_GameObject: {fileID: 1619030671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.6, y: 1.54, z: 0}
